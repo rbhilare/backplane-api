@@ -1260,9 +1260,6 @@ components:
         jira_base_url:
           type: string
           description: URL to the Jira instance for creating and managing access requests
-        assume_initial_arn:
-          type: string
-          description: Initial AWS IAM role ARN used to bootstrap the isolated backplane credentials flow for accessing customer AWS accounts
         jira_config_for_access_requests:
           $ref: '#/components/schemas/JiraAccessRequestConfig'
         prod_env_name:
@@ -1273,13 +1270,13 @@ components:
       description: Jira project mappings and workflow configuration
       type: object
       properties:
-        project-key:
+        project_key:
           type: string
           description: Jira project key (e.g., "OHSS")
-        issue-type:
+        issue_type:
           type: string
           description: Jira issue type for access requests (e.g., "Story", "Task")
-        transition-states:
+        transition_states:
           type: object
           additionalProperties:
             type: string
