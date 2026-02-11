@@ -1270,13 +1270,13 @@ components:
       description: Jira project mappings and workflow configuration
       type: object
       properties:
-        project-key:
+        project_key:
           type: string
           description: Jira project key (e.g., "OHSS")
-        issue-type:
+        issue_type:
           type: string
           description: Jira issue type for access requests (e.g., "Story", "Task")
-        transition-states:
+        transition_states:
           type: object
           additionalProperties:
             type: string
