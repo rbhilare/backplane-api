@@ -1260,9 +1260,6 @@ components:
         jira_base_url:
           type: string
           description: URL to the Jira instance for creating and managing access requests
-        assume_initial_arn:
-          type: string
-          description: Initial AWS IAM role ARN used to bootstrap the isolated backplane credentials flow for accessing customer AWS accounts
         jira_config_for_access_requests:
           $ref: '#/components/schemas/JiraAccessRequestConfig'
         prod_env_name:
